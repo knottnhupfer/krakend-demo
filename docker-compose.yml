@@ -1,0 +1,10 @@
+---
+version: '3'
+
+services:
+  api:
+    image: devopsfaith/krakend:1.3
+    ports:
+      - "8000:8080"
+    volumes:
+      - ./configs/krakend.json:/etc/krakend/krakend.json
